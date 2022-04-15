@@ -1,3 +1,78 @@
-<h1>Helllo</h1>
-<router-outlet></router-outlet>
-<h1>end</h1>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="header">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="willkommen" class="w3-bar-item w3-button w3-wide"><img src="../assets/allewappen.jpg" alt="Wappen" style="height: 25px;"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="derfamiliennamemueller" class="w3-bar-item w3-button">Familienname</a>
+        <a href="etzikenunddiedortansaessigenmueller" class="w3-bar-item w3-button">Etziken</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Generationen & Zweige
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="diegenerationenundzweige/dievorgenerationen">Vorgenerationen</a>
+            <a href="diegenerationenundzweige/dieerstenfuenfgenerationen">Ersten fünf Generationen</a>
+            <a href="diegenerationenundzweige/ansaessigerzweig">Ansässiger Zweig</a>
+            <a href="diegenerationenundzweige/schnidersviggis">Schniders Viggis</a>
+            <a href="diegenerationenundzweige/zweigdersphinx">Zweig der Sphinx</a>
+            <a href="diegenerationenundzweige/amerikanischerzweig">Amerikanischer Zweig</a>
+            <a href="diegenerationenundzweige/meiereggenschwilerspillmannzweig">Meier-Eggenschwiler-Spillmann-Zweig</a>
+            <a href="diegenerationenundzweige/renatozweig">Renato-Zweig</a>
+            <a href="diegenerationenundzweige/verwandtschaftlichebeziehungen">Verwandtschaftliche Beziehungen</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Wappen
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="diewappen/daswappenvon1893">Wappen von 1959</a>
+          <a href="diewappen/daswappenvon1959">Wappen von 1893</a>
+          <a href="diewappen/daswappenvon1968">Wappen von 1968</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Organisatorisches
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="organisatorisches/kontakt">Kontakt</a>
+          <a href="organisatorisches/quellen">Quellen</a>
+          <a href="organisatorisches/jahresbericht">Jahresberichte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div style="height: 50px;"></div>
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+
+
