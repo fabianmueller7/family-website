@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <div class="header">
   <!-- Navbar (sit on top) -->
@@ -51,8 +52,55 @@
         </div>
       </div>
     </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar" #mySidebar>
+  <a href="javascript:void(0)" (click)="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="derfamiliennamemueller" (click)="w3_close()" class="w3-bar-item w3-button">Familienname</a>
+  <a href="etzikenunddiedortansaessigenmueller" (click)="w3_close()" class="w3-bar-item w3-button">Etziken</a>
+
+  <div class="dropdown">
+    <button class="dropbtn" style="color: white;">Generationen & Zweige
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="diegenerationenundzweige/dievorgenerationen">Vorgenerationen</a>
+      <a href="diegenerationenundzweige/dieerstenfuenfgenerationen">Ersten fünf Generationen</a>
+      <a href="diegenerationenundzweige/ansaessigerzweig">Ansässiger Zweig</a>
+      <a href="diegenerationenundzweige/schnidersviggis">Schniders Viggis</a>
+      <a href="diegenerationenundzweige/zweigdersphinx">Zweig der Sphinx</a>
+      <a href="diegenerationenundzweige/amerikanischerzweig">Amerikanischer Zweig</a>
+      <a href="diegenerationenundzweige/meiereggenschwilerspillmannzweig">Meier-Eggenschwiler-Spillmann-Zweig</a>
+      <a href="diegenerationenundzweige/renatozweig">Renato-Zweig</a>
+      <a href="diegenerationenundzweige/verwandtschaftlichebeziehungen">Verwandtschaftliche Beziehungen</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" style="color: white;">Wappen
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="diewappen/daswappenvon1893">Wappen von 1959</a>
+      <a href="diewappen/daswappenvon1959">Wappen von 1893</a>
+      <a href="diewappen/daswappenvon1968">Wappen von 1968</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" style="color: white;">Organisatorisches
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="organisatorisches/kontakt">Kontakt</a>
+      <a href="organisatorisches/quellen">Quellen</a>
+      <a href="organisatorisches/jahresbericht">Jahresberichte</a>
+    </div>
+  </div>
+</nav>
 
 <div>
   <div style="height: 50px;"></div>
@@ -69,6 +117,3 @@
   <p>© 2015-2022 Müller von Etziken. Alle Rechte vorbehalten.</p>
   <p>Created by <a href="https://euw.op.gg/summoners/euw/sharkcraft" title="Fabian Müller" target="_blank" class="w3-hover-text-green">Fabian Müller</a></p>
 </footer>
- 
-
-
