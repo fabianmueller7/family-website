@@ -9,7 +9,7 @@
     <div class="w3-bar w3-white w3-card" id="myNavbar">
       <a href="willkommen" class="w3-bar-item w3-button w3-wide"><img src="../assets/allewappen.jpg" alt="Wappen" style="height: 25px;"></a>
       <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
+      <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="derfamiliennamemueller" class="w3-bar-item w3-button">Familienname</a>
         <a href="etzikenunddiedortansaessigenmueller" class="w3-bar-item w3-button">Etziken</a>
 
@@ -52,14 +52,14 @@
         </div>
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" (click)="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar" #mySidebar>
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large"  style="display:none" id="mySidebar" #mySidebar>
   <a href="javascript:void(0)" (click)="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="derfamiliennamemueller" (click)="w3_close()" class="w3-bar-item w3-button">Familienname</a>
   <a href="etzikenunddiedortansaessigenmueller" (click)="w3_close()" class="w3-bar-item w3-button">Etziken</a>
